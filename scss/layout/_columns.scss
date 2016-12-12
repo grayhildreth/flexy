@@ -1,0 +1,112 @@
+// body {
+//   display: flex;
+// }
+//
+// .parent {
+//   display: flex;
+//   border: 3px solid coral;
+//   flex-direction: row;
+//   flex-basis: max-content;
+//   // flex-wrap: wrap;
+// }
+//
+// .box1 {
+//   @include box-size;
+// }
+//
+// .box2 {
+//   @include box-size;
+// }
+//
+// .box3 {
+//   @include box-size;
+// }
+//
+// .box4 {
+//   @include box-size;
+// }
+.mom {
+  border: 1px solid $navy;
+  flex-wrap: wrap;
+  flex-flow: row;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+
+.box1 {
+  flex-grow: 5;
+  @include box-size;
+  @extend %col-1;
+}
+.box2 {
+  flex-grow: 3;
+  @include box-size;
+}
+
+.box3 {
+  flex-grow: 3;
+  @include box-size;
+  }
+}
+
+.dad {
+  margin-top: 10px;
+  border: 1px solid $navy;
+  flex-wrap: wrap;
+  flex-flow: row;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+
+.box1 {
+  flex-grow: 3;
+  @include box-size;
+  @extend %col-1;
+}
+.box2 {
+  flex-grow: 3;
+  @include box-size;
+}
+
+.box3 {
+  flex-grow: 3;
+  @include box-size;
+  }
+}
+
+.auntie {
+  margin-top: 10px;
+  border: 1px solid $navy;
+  flex-wrap: wrap;
+  flex-flow: row;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+
+.box1 {
+  flex-grow: 5;
+  @include box-size;
+}
+.box2 {
+  flex-grow: 3;
+  @include box-size;
+}
+
+.box3 {
+  flex-grow: 3;
+  @include box-size;
+  }
+}
